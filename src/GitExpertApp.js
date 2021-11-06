@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GitExpertApp = () => {
+export const GitExpertApp = ({ defaultCategories=[]}) => {
 
     // const categories = ['One Punchs', 'Samurai X', 'Dragon Ball'];
-    const [Categories, setCategories] = useState(['Dragon Ball'])
+    const [Categories, setCategories] = useState(defaultCategories);
 
     // const handleAdd =()=>{
     //     //agregar un elemento a un arreglo
